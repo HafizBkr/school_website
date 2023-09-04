@@ -1,0 +1,222 @@
+@import url(./Font/stylesheet.css);
+.leftside {
+    width: 35%;
+    margin-right: 0; /* Annule la marge à droite */
+    position: fixed;
+  }
+  .container {
+   margin-top: 100px;
+   
+ }
+ p{
+  font-size: 16px;
+  font-weight: 800;
+}
+ .search{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 42px;
+ }
+
+
+  input{
+     border: none;
+     height: 30px;
+     width: 200px;
+     outline: none;
+    
+ }
+ .inp {
+    margin-top: 10px;
+     width: 390px;
+     height: 50px;
+     background-color: white;
+     padding: 20px;
+     align-items: center;
+     display: flex;
+     box-shadow: 0 10px 35px rgba(0,0,0,.1);
+     transition:  0.9s ease; 
+     border-radius: 7px;
+ }
+ .map-container {
+   
+    margin: 55px 0 0 ;
+    justify-content: center;
+    display: flex;
+   
+  }
+  .search-description{
+    font-family:  'Messina Sans';
+  }
+
+  .map-container iframe {
+    position: absolute;
+    width: 80%;
+    height: 35vh;
+    border: none; /* Remove iframe border */
+  }
+  .leftside .icon a{
+    font-size: 18px;
+  }
+  .icon{
+    float: right;
+    margin-right: 20px;
+    margin-top: -35px;
+    font-size: 20px;
+  }
+  .leftside .icon a {
+    position: relative;
+    padding-right: 20px; /* Espace pour la flèche */
+    transition-delay: 1s;
+  }
+  
+  .leftside .icon a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('../assets/arrow.svg'); /* Remplacez par le chemin de votre image de flèche */
+    background-size: cover;
+  }
+  .ico{
+    text-decoration: none;
+    font-style: bold;
+    transition-delay:1s ;
+  }
+  .scroll-link {
+    cursor: pointer; /* Changement de curseur pour indiquer qu'il s'agit d'un lien cliquable */
+    transition: opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  .scroll-link:hover {
+    opacity: 0.7; /* Changement d'opacité au survol */
+    transform: translateY(-3px); /* Décalage vers le haut au survol */
+  }
+.search-description{
+  width: 80%;
+}
+@media screen and (max-width: 1024px) {
+  /* Your CSS styles for screens with a width of 1024 pixels or less go here */
+  .leftside {
+    width: 100%;
+    position: initial;
+  }
+  .search-description {
+    width: 100%;
+    text-align: center;
+  }
+ 
+  .inp{
+    width: 600px;
+  }
+ 
+  .map-container iframe{
+    width: 600px;
+  }
+  .icon{
+    display: none;
+  }
+ 
+}
+ /* format ordinateur */
+ @media screen and (min-width:1025px) {
+  .leftside{
+    height: 70vh;
+  }
+  .inp {
+    width: 72%;
+}
+
+
+ }
+ /* tablette */
+@media screen and (min-width: 728px) and (max-width: 1024px)  {
+   .leftside{
+    margin-bottom: 3rem;
+   }
+  .map-container{
+    display: none;
+  }
+.icon{
+  display: none;
+}
+.inp {
+  width: 500px;
+}
+.search-description {
+  width: 541px;
+}
+.search-description p {
+  text-align: left;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+}
+  /* mobile large */
+@media  (min-width: 375px) and (max-width: 767px){
+  .map-container{
+    display: none;
+  }
+  .leftside{
+    margin-bottom: 3rem;
+   }
+  }
+
+  @media screen and (max-width: 730px){
+  .search-description p {
+      font-weight: 800;
+      text-align: left;
+      margin: 0;
+      font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 630px){
+  .inp {
+    width: 400px;
+  }
+  .map-container iframe{
+    width: 450px;
+  }
+  .search-description p {
+    font-weight: 800;
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+}
+.search-description{
+  margin-left: 20px;
+  width: 75%;
+}
+  
+  }
+@media screen and (max-width: 425px){
+  .inp {
+    width: 300px;
+  }
+  .map-container { 
+    display: none;
+  }
+  
+  }
+@media screen and (max-width: 320px){
+  .inp {
+    width: 260px;
+  }
+  .map-container iframe{
+    width: 300px;
+  }
+  .search-description >p {
+    margin-left: -20px;
+    font-size: 12px;
+}
+  
+  }

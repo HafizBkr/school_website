@@ -1,0 +1,28 @@
+.info-container{
+    display: flex;
+}
+.info-texte{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.info-image{
+    width: 20%;
+}
+.info-image > img{
+    width: 100%;
+}
+.english-container{
+    display: flex;
+    gap: 20px;
+}
+@media screen and (max-width:768px) {
+    .english-container{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:425px) {
+    .info-texte {
+        width: 70%;
+    }
+}

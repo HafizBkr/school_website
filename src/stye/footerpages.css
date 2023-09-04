@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.row{
+	display: flex;
+}
+.footer{
+	display: flex;
+}
+.cont-cats{
+	display: flex;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.footer-links{
+	display: flex;
+	margin-left: 100px;
+}
+.contacts a{
+	color: black;
+	font-family : 'Messina Sans';
+	font-size: 16px;
+}
+.contacts{
+	margin-left: 10px;
+}
+.footer-col ul{
+	display: flex;
+	flex-direction: column;
+	border-left: 1px soid black;
+	gap: 2px;
+}
+.footer-col ul a{
+	text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative; /* Ajoutez cette ligne */
+	font-family : 'Messina Sans';
+
+	
+}
+.svgs svg {
+    width: 22px;
+    margin-left: 20px;
+}
+@media screen and (max-width:1110px) and (min-width:562px){
+ 
+	.row{
+		display: flex;
+		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+	.footer-links {
+		display: flex;
+		gap: 95px;
+		margin-left: -15px;
+	}
+	.cont-cats {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width:562px){
+	.footer-links {
+	  display: flex;
+	  gap: 0px;
+	  margin-left: -18px;
+  }
+  
+	.row{
+		display: flex;
+		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+
+	.cont-cats {
+		margin-left: -16px;
+		
+	}
+	.contacts a {
+		font-size: 13px;
+	}
+  }
+  @media screen and (min-width:1024px) and (max-width:1350px) {
+	.contacts {
+	  margin-left: 0;
+  }
+  }

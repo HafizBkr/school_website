@@ -1,0 +1,316 @@
+/* Navbar.css */
+
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+.navbar {
+    background-color: transparent;
+    width: 75%;
+    height: 80px;
+    /* background-color: rgb(0, 247, 255); */
+    margin-left: 14%;
+    border-right: 1px solid rgba(179, 165, 165, 0.363); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Navbar{
+    padding: 0;
+  }
+  .mobile-links{
+    display: none;
+  }
+  
+  /* ... */
+/* Navbar.css */
+
+/* ... autres styles ... */
+
+/* Style pour les liens actifs */
+.navbar a.active {
+  font-weight: bold; /* Par exemple, mettez en gras */
+  color: #d7151a; /* Couleur pour les liens actifs */
+}
+
+/* Style pour la barre d'hover permanente */
+.navbar a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: #d7151a;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(1);
+  transition-duration: 0.9s;
+}
+.burger{
+  display: none;
+}
+
+
+/* ... */
+
+  .menu{
+    display: none;
+  }
+  
+  .navbar-underline {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(179, 165, 165, 0.363);
+  }
+  /* Ajoutez cette classe pour cacher le dropdown par défaut */
+
+
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative; /* Ajoutez cette ligne */
+  }
+  
+  .navbar a:hover {
+    transform: scaleX(1);
+  }
+  
+  .select-options{
+    background-color: red;
+  }
+  
+ 
+  
+  .navbar  a:hover::after { /* Utilisez ::after ici */
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #d7151a;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1); /* Ajustez cette valeur */
+    transition-duration: 0.9s;
+  }
+  .navbar a:active{
+  
+  }
+
+  select{
+    height: 25px;
+    width: 52px;
+    border: none; 
+  }
+  .burger{
+    width: 40px;
+  }
+  select:hover {
+    transform: scaleX(1);
+  }
+  @media screen and (min-width:1410px) {
+    .Navbar{
+      border-bottom: 1px solid #dfdfdf;
+      display: flex;
+  }
+  }
+@media screen and (max-width:500px){
+  .Navbar{
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+}
+}
+  /* Tablettes en mode portrait (largeur maximale : 768px) */
+@media (min-width: 768px) and (max-width: 1410px) {
+  /* Votre code CSS pour les tablettes en mode portrait */
+  .navbar{
+    border-right:1px solid #dfdfdf;
+    
+    
+  }
+  .Navbar{
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+}
+/* Add any other styles you have before this */
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Add any other styles you have after this */
+
+
+.dropdown-menu{
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 193px;
+    height: 200px !important;
+    right: -80px;
+    color: black;
+    top: 60px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.1);
+    border-top: 3px solid red;
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select button{
+  background: none;
+  border: none;
+  font-size: 15px;
+}
+.custom-select button span{
+  color: red;
+  margin-left: 6px;
+}
+ }
+
+
+/* Tablettes en mode paysage (largeur maximale : 768px) */
+@media  (min-width: 768px) and (max-width: 801px)  {
+  /* Votre code CSS pour les tablettes en mode paysage */
+  .burger {
+    display: none; 
+}
+.Navbar {
+  padding: 0 12px;
+    
+}
+.dropdown-menu {
+  right: -5px;
+  
+}
+
+}
+@media screen and (max-width:769px) {
+  /* .navbar{
+    background-color: blue;
+    position: absolute;
+    height: 100vh;
+    z-index: 5;
+    width: 100%;
+  }
+  .navbar ul{
+    display: block;
+  } */
+}
+
+/* Mobil en mode paysage (largeur maximale : 768px) */
+@media  (min-width: 375px) and (max-width: 767px)  {
+  /* Votre code CSS pour les tablettes en mode paysage */
+  .burger {
+    display: block; 
+}
+
+   li{
+    display: none;
+   }
+ .Navbar{
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+.dropdown-menu {
+  right: -5px;
+  
+}
+}
+
+
+/* Tablettes en général (largeur minimale : 768px, largeur maximale : 1024px) */
+
+
+
+@media screen and (max-width: 1024px) {
+  /* Your CSS styles for screens with a width of 1024 pixels or less go here */
+  .navbar {
+    /* background-color: rgb(0, 247, 255); */
+    margin-left: 0%;
+  
+  }
+   
+}
+@media screen and (max-width: 800px) {
+  /* Your CSS styles for screens with a width of 1024 pixels or less go here */
+  /* .navbar li{
+    display: none;
+  } */
+  .menu-clicked-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 193px;
+    height: 0; /* Start with a height of 0 */
+    right: 14px;
+    color: black;
+    top: 60px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid red;
+    overflow: hidden; /* Hide the overflow content */
+  
+    /* CSS transition to smoothly animate height change */
+    transition: height 0.9s ease-in-out;
+  }
+  
+  .menu-clicked-content.active {
+    /* Set the height when the content is active */
+    height: 345px !important;
+    text-align:center;
+  }
+  
+  
+  select{
+    display: none;
+  }
+  .menu {
+    display: block; 
+    margin-right: 1rem;
+    position: relative;
+    z-index: 7;
+  
+}
+  .navbar{
+    display: flex;
+    border-right: none;
+    justify-content: flex-end;
+  }
+}
+@media screen and  (max-width:374px) {
+ .navbar ul{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  
+}
+@media screen and (min-width:768px) {
+  .menu-clicked-content{
+    display: none;
+  }
+ 
+}

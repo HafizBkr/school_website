@@ -1,0 +1,142 @@
+
+.forma-tion{
+   width: 100%;
+}
+.forma-tion img{
+   width: 80%;
+   margin-left: 90px;
+
+}
+h1{
+  margin-left: 3%;
+}
+.bts{
+  width: 95%;
+}
+.specialiter{
+  display: flex;
+}
+.card {
+    background: #fff;
+    height: 300px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+.fiche-container{
+  width: 90%;
+  border: solid 1px rgb(94, 88, 88);
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+.contry{
+  width: 100%;
+  border: 1px solid black;
+}
+.file {
+  min-width: 155px;
+  height: 45px;
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(196, 3, 3);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.8); /* Ombre portée */
+  transition: transform 0.2s ease-in-out; /* Transition pour l'effet de survol */
+}
+
+.file:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+   cursor: pointer;
+}
+.content >P{
+  font-weight: 600;
+}
+.pdf{
+  width: 30px;
+  margin-left: -30px;
+ height: 30px;
+}
+.entreprise-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.entreprise-text{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entreprise-image{
+  width: 30%;
+}
+.entreprise-image >img{
+  width: 100%;
+}
+@media screen and (max-width:900px) {
+  .specialiter {
+    flex-direction: column-reverse;
+}
+.forma-tion img {
+  width: 80%;
+  margin-left: 50px;
+}
+.card{
+  margin: 0 auto;
+}
+.bts{
+  margin-left: 1rem;
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+}
+@media screen and  (max-width:600px) {
+  .entreprise-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 350px;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    
+  }
+  .entreprise-image {
+    width: 90%;
+  }
+  .entreprise-text {
+    width: 91%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width:380px) {
+
+}
+@media screen  and (max-width:330px) {
+  .card {
+    background: #fff;
+    height: 300px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.bts {
+  width: 88%;
+}
+.filliere{
+  font-size: 10px;
+}
+.entreprise-container {
+  width: 300px;
+
+}
+}

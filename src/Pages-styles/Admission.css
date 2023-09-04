@@ -1,0 +1,156 @@
+.admission-container{
+    display: flex;
+    margin-top: 10px;
+}
+.image-admission >img{
+   width: 100%;
+}
+.image-admission{
+    width: 20%;
+}
+.admission-text{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-around;
+}
+.cardd {
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 30px 0;
+  }
+
+  .cardd h3 {
+    color: #620011;
+    margin-bottom: 10px;
+  }
+
+  .cardd > p {
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .card ul {
+    margin-left: 20px;
+  }
+
+  .card li {
+    color: #666666;
+    margin-bottom: 5px;
+  }
+
+  .dossier-container{
+    display: flex;
+  }
+  .dossier-container-image{
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    width: 30%;
+  }
+  .dossier-container-image >img{
+    width: 100%;
+  }
+  .spann{
+    color:red; /* Couleur mise en évidence */
+    font-weight: bold;
+  }
+  .cv-items{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 0;
+  }
+  .renter-text{
+    width: 50%;
+    border: 1px solid;
+  }
+  .titre-text{
+    text-align: center;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+  }
+  .content-div{
+    display:  flex;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+  }
+ .concour-reductions{
+    display: flex;
+    justify-content: space-around;
+ }
+ .concour-cards{
+
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 30px 0;
+    
+    HEIGHT: 280PX;
+
+ }
+ .rentrer-scolaire-container{
+  display: flex;
+  gap: 100px;
+ }
+ .renter-image{
+  display: flex;
+  align-items: center;
+  width: 20%;
+ }
+ .renter-image >img{
+  width: 100%;
+ }
+ @media screen and (max-width:1280px) {
+  .concour-reductions {
+    flex-direction: column;
+}
+.concour-cards{
+  width: 90%;
+}
+ }
+
+ @media screen and (max-width:768px) {
+  .concour-cards{
+    margin: 20px auto;
+  }
+  .cardd{
+    margin: 10px auto;
+  }
+  .dossier-container {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.dossier-container-image {
+
+  width: 60%;
+}
+.admission-container {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+ }
+ @media screen and (max-width:490px) {
+  .concour-cards{
+   height: auto;
+  }
+ }
+ @media screen and (max-width:425px) {
+  .admission-text {
+    width: 100%;
+  
+}
+  
+ }
