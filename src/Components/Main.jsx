@@ -28,7 +28,7 @@ export default function Main() {
         "Le Club d'anglais de l’ESGIS « ESGIS English Club » a remporté avec brio la finale du « Challenge University » …",
     },
     {
-      image: require('../assets/micro.'),
+      image: require('../assets/micro.PNG'),
       title: "ESGIS, Mikrotik academy",
       link: "/News",
       description:

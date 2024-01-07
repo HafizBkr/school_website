@@ -11,7 +11,7 @@ export default function News() {
   const [event, setEvents] = useState([]); // Change news to [] initially
 
   useEffect(() => {
-    axios.get('http://localhost/Backend/index.php')
+    axios.get('https://esgis.kavaliashop.com/backend/index.php')
       .then(response => {
         setNews(response.data);
       })
@@ -19,8 +19,21 @@ export default function News() {
         console.error(error);
       });
   }, []);
+  
   useEffect(() => {
-    axios.get('http://localhost/Backend/event.php')
+    axios
+      .get('https://esgis.kavaliashop.com/backend/index.php')
+      .then(response => {
+        setNews(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get('https://esgis.kavaliashop.com/backend/event.php')
       .then(response => {
         setEvents(response.data);
       })

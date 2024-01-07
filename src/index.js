@@ -46,7 +46,7 @@ root.render(
         <Route path="/logo" element={<LogoPages />} />
         <Route path="/Presentation" element={<Presentation/>} />
         <Route path="/Formation" element={<Formation/>} />
-        <Route path="/Admission" element={<Admission/>} />
+        <Route path="/Admi ssion" element={<Admission/>} />
         <Route path="/Zone-etudiante" element={<ZoneEtudiante/>} />
         <Route path="/Partenariat" element={<Partenaria/>} />
         <Route path="/Esgis-en-Image" element={<EsgisEnimage/>} />
