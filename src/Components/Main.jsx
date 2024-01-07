@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../stye/Main.css';
 import Footermain from './footermain';
-import Micro from '../assets/Micro.svg';
+// Corrigez la casse dans l'instruction d'importation
+import MicroImage from '../assets/M.png';
+
 
 export default function Main() {
   const smallCards = [
@@ -28,7 +30,7 @@ export default function Main() {
         "Le Club d'anglais de l’ESGIS « ESGIS English Club » a remporté avec brio la finale du « Challenge University » …",
     },
     {
-      image: require('../assets/micro.PNG'),
+      image: require('../assets/M.png'),
       title: "ESGIS, Mikrotik academy",
       link: "/News",
       description:
@@ -72,7 +74,7 @@ export default function Main() {
         "Le Club d'anglais de l’ESGIS « ESGIS English Club » a remporté avec brio la finale du « Challenge University » le samedi 02 Avril 2022 à la Salle Concorde du 02 Février. Cette compétition a connu la participation des  …",
     },
     {
-      image: require('../assets/micro.PNG'),
+      image: require('../assets/M.png'),
       title: "ESGIS, Mikrotik academy",
       link: "/News",
       description:
